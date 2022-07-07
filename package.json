@@ -22,7 +22,7 @@
     "gmaps": "^0.4.24",
     "highlight": "^0.2.4",
     "material-design-icons": "^3.0.1",
-    "moment": "^2.15.0",
+    "moment": "^2.29.4",
     "promise-polyfill": "^6.0.2",
     "quasar-framework": "^0.13.2",
     "roboto-fontface": "^0.7.0",
