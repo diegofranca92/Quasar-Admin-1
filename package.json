@@ -7,12 +7,14 @@
     "clean": "node build/script.clean.js",
     "dev": "node build/script.dev.js",
     "build": "node build/script.build.js",
-    "lint": "eslint --ext .js,.vue src"
+    "lint": "eslint --ext .js,.vue src",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "dependencies": {
-    "axios": "^0.15.3",
+    "axios": "^0.21.3",
     "babel-runtime": "^6.0.0",
-    "chart.js": "^2.5.0",
+    "chart.js": "^2.9.4",
     "countup.js": "^1.8.2",
     "dragula": "^3.7.2",
     "fastclick": "^1.0.6",
@@ -22,15 +24,16 @@
     "gmaps": "^0.4.24",
     "highlight": "^0.2.4",
     "material-design-icons": "^3.0.1",
-    "moment": "^2.15.0",
+    "moment": "^2.29.4",
     "promise-polyfill": "^6.0.2",
     "quasar-framework": "^0.13.2",
     "roboto-fontface": "^0.7.0",
     "vivus": "^0.4.0",
-    "vue": "2.2.2",
+    "vue": "2.5.17",
     "vue-router": "^2.3",
     "vuelidate": "^0.3.1",
-    "vuex": "^2.2.1"
+    "vuex": "^2.2.1",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "autoprefixer": "^6.4.0",
@@ -72,5 +75,6 @@
     "webpack-dev-middleware": "^1.8.4",
     "webpack-hot-middleware": "^2.17.0",
     "webpack-merge": "^3.0.0"
-  }
+  },
+  "snyk": true
 }
